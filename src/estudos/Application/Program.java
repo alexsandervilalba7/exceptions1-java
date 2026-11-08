@@ -1,6 +1,7 @@
-package Application;
+package estudos.Application;
 
-import Model.exceptions.DomainException;
+import estudos.Model.Entities.Reservation;
+import estudos.Model.exceptions.DomainException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,7 +22,7 @@ public class Program {
                 System.out.print("Check-out date (dd/MM/yyyy):  ");
                 Date CheckOut = sdf.parse(sc.next());
 
-                Model.Entities.Reservation reservation = new Model.Entities.Reservation(number, checkIn, CheckOut);
+                Reservation reservation = new Reservation(number, checkIn, CheckOut);
                 System.out.println("Reservation: " + reservation);
 
                 System.out.println();

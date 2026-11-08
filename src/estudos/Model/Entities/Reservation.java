@@ -1,6 +1,6 @@
-package Model.Entities;
+package estudos.Model.Entities;
 
-import Model.exceptions.DomainException;
+import estudos.Model.exceptions.DomainException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
